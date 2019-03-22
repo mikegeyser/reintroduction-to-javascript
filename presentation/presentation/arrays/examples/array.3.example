@@ -1,0 +1,6 @@
+    
+    const numbers = ["one", "two", "three", "four"];
+
+    numbers.forEach(function(element, index, array){
+        console.log(array[index]); // one, two, three, four???
+    })

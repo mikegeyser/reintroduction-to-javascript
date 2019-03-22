@@ -38,6 +38,7 @@
 - Variables
     - var foo = 'bar';
     - Block vs function scoping and Hoisting
+    - Where do I fit in string interpolation?!
 
 - Arrays and Looping
     - for / for in / for of / foreach() / map()

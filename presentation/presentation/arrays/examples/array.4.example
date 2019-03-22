@@ -1,0 +1,8 @@
+    
+    const numbers = [1, 2, 3, 4];
+
+    const exponents = numbers.map(function(element){
+        return 2 ** element;
+    });
+
+    console.log(exponents); // 2, 4, 8, 16

@@ -59,6 +59,8 @@ import { For } from './arrays/for';
 import { ForIn } from './arrays/for-in';
 import { WhySoMany } from './arrays/why-so-many';
 import { ForOf } from './arrays/for-of';
+import { Functional } from './arrays/functional';
+import { OrderOfIteration } from './arrays/order-of-iteration';
 
 export default class Presentation extends React.Component {
   render() {
@@ -91,7 +93,9 @@ export default class Presentation extends React.Component {
         <ForIn />
         <ForOf />
         <Functions />
-
+        <Functional />
+        <OrderOfIteration />
+        
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Typography
