@@ -1,0 +1,77 @@
+:root{
+    --primary: white;
+    --secondary: #1F2022;
+    --tertiary: #03A9FC;
+    --quaternary: #FFE600;
+}
+
+.tertiary {
+    color: var(--tertiary);
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+}
+
+.spectacle-presenter-main .spectacle-slide {
+    max-height: 50%;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 2em;
+    left: 15vw;
+    font-size: 1.3em;
+}
+
+.side-by-side-code {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.side-by-side-code  div {
+    flex: 0 1 auto;
+    min-width: 50%;
+    min-height: 500px;
+    margin: 1em;
+}
+
+.side-by-side-code  div pre {
+    height: 100%;
+}
+
+
+.prism-code {
+    font-size: 2.1em !important;
+}
+
+div.meme img.aliens {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+div.meme p.meme-text {
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100pt;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.browsers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.browsers img {
+    width: 6em;
+    height: 6em;
+}

@@ -1,0 +1,11 @@
+function Dog(){
+    this.prototype.call(this);
+    
+    this.makeSound = function() {
+      this.prototype.makeSound
+        .call(this);
+    }   
+}
+
+Dog.prototype = new Animal()
+Dog.getType = function(){}

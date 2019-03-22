@@ -1,0 +1,7 @@
+class Dog {
+    constructor(){}
+    
+    void makeSound(){}
+
+    static void getType(){}
+}
