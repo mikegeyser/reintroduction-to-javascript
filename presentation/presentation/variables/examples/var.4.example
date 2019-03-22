@@ -1,0 +1,10 @@
+    
+    var i, x; // hoisting!
+
+    for (i = 0; i < 10; i++) {
+        x = 2 ** i;
+		
+      	setTimeout(function(){
+        	console.log(x);  // ohhhh
+        }, 0);
+    }

@@ -47,21 +47,42 @@ import { Title } from './intro/title';
 import { JavaVsJavaScript } from './intro/java-vs-javascript';
 import { Functions } from './intro/functions';
 import { RulesOfEngagement } from './intro/rules-of-engagement';
+import { WhatWeWillCover } from './intro/what-we-will-cover';
+import { WhyNotVar } from './variables/why-not-var';
+import { Let } from './variables/let';
+import { Const } from './variables/const';
+import { NeverUseVar } from './variables/never-use-var';
+import { DontBreakTheWeb } from './variables/dont-break-the-web';
+import { Variables } from './variables/variables';
+import { Arrays } from './arrays/arrays';
 
 export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={['slide', 'slide']} transitionDuration={500} theme={theme}>
+        {/* Intro */}
         <Title />
         <Slide bgColor="secondary">
           <Text textColor="primary">// todo: awkward, but funny introduction.. </Text>
-          <Notes>
-            Wat?
-          </Notes>
+          <Notes>Wat?</Notes>
         </Slide>
         <JavaVsJavaScript />
         <Functions />
         <RulesOfEngagement />
+        <WhatWeWillCover />
+
+        {/* Variables */}
+        <Variables />
+        <WhyNotVar />
+        <Functions />
+        <Let />
+        <Const />
+        <NeverUseVar />
+        <DontBreakTheWeb />
+
+        {/* Arrays */}
+        <Arrays />
+
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Typography

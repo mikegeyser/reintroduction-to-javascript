@@ -22,7 +22,6 @@ export class Title extends React.Component {
           <div className="tertiary">@mikegeyser</div>
           <div className="tertiary">DevConf 2019</div>
         </div>
-        <Notes>Wat?</Notes>
       </Slide>
     );
   }

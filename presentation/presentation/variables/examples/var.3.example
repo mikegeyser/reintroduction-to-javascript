@@ -1,0 +1,8 @@
+    
+    for (var i = 0; i < 10; i++) {
+        var x = 2 ** i;
+		
+      	setTimeout(function(){
+        	console.log(x);  // 512, every time
+        }, 0);
+    }

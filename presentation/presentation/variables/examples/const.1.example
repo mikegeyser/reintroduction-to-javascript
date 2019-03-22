@@ -1,0 +1,5 @@
+    
+    
+    for (const i = 0; i < 10; i++) {
+        const x = 2 ** i; // Error: Assignment to constant
+    }

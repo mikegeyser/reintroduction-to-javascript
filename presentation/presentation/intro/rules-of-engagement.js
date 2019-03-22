@@ -11,14 +11,6 @@ export class RulesOfEngagement extends React.Component {
   render() {
     return (
       <Slide bgColor="primary">
-<Notes>
-    <h4>Slide notes</h4>
-    <ol>
-      <li>First note</li>
-      <li>Second note</li>
-    </ol>
-  </Notes>
-
         <div className="browsers">
           <Image src={chrome} />
           <Image src={firefox} />

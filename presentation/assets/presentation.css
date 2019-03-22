@@ -7,8 +7,11 @@
 
 .tertiary {
     color: var(--tertiary);
+}
+
+.hand-written {
     font-weight: bold;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive !important;
 }
 
 .spectacle-presenter-main .spectacle-slide {
@@ -41,6 +44,7 @@
 
 .prism-code {
     font-size: 2.1em !important;
+    min-height: 50vh;
 }
 
 div.meme img.aliens {
