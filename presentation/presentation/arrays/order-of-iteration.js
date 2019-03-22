@@ -3,12 +3,16 @@ import React from 'react';
 import { Slide, Text } from 'spectacle';
 
 export class OrderOfIteration extends React.Component {
-  state = {};
+  state = { gold: true };
 
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ why: 'But... Why so many?' });
-    }, 4000);
+      this.setState({ silver: true });
+    }, 2000);
+
+    setTimeout(() => {
+      this.setState({ bronze: true });
+    }, 3500);
   }
 
   render() {
@@ -17,12 +21,16 @@ export class OrderOfIteration extends React.Component {
         <Text textSize={80} textColor="primary">
           🥇 map()
         </Text>
-        <Text textSize={60} textColor="primary">
-          🥈 for...of
-        </Text>
-        <Text textSize={40} textColor="primary">
-          🥉 for...in
-        </Text>
+        {this.state.silver && (
+          <Text textSize={60} textColor="primary">
+            🥈 for...of
+          </Text>
+        )}
+        {this.state.bronze && (
+          <Text textSize={40} textColor="primary">
+            🥉 for...in
+          </Text>
+        )}
       </Slide>
     );
   }
