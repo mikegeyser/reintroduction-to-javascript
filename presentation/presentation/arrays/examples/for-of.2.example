@@ -6,7 +6,6 @@
         four:  "4"
     };
 
-
-    for(let i in numbers) {
-        console.log(i); // ?
+    for(let i of numbers) {
+        console.log(i); // TypeError: numbers is not iterable
     }

@@ -1,7 +1,7 @@
 
     const numbers = ["one", "two", "three", "four"];
 
-    numbers.foo = "bar";
+    numbers.foo = "bar"; // 👈 wat
 
     for(let i in numbers) {
         console.log(i); // 0, 1, 2, 3, foo 

@@ -57,6 +57,8 @@ import { Variables } from './variables/variables';
 import { Arrays } from './arrays/arrays';
 import { For } from './arrays/for';
 import { ForIn } from './arrays/for-in';
+import { WhySoMany } from './arrays/why-so-many';
+import { ForOf } from './arrays/for-of';
 
 export default class Presentation extends React.Component {
   render() {
@@ -84,8 +86,11 @@ export default class Presentation extends React.Component {
 
         {/* Arrays */}
         <Arrays />
+        <WhySoMany />
         <For />
         <ForIn />
+        <ForOf />
+        <Functions />
 
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>

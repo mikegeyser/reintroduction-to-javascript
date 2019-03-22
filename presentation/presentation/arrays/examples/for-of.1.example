@@ -1,0 +1,6 @@
+
+    const numbers = ["one", "two", "three", "four"];
+
+    for(let i of numbers) {
+        console.log(i); // one, two, three, four
+    }
