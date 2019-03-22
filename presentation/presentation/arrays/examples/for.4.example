@@ -1,0 +1,7 @@
+
+    const numbers = ["one", "two", "three", "four"];
+    
+            1️              2️          
+    for(let i = 0; i < numbers.length; i++) {
+     👉 console.log(numbers[i]); // one, two, three, four
+    }

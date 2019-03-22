@@ -1,0 +1,10 @@
+
+    const numbers = ["one", "two", "three", "four"];
+    
+            1️              2️, 3        3,4
+    for(let i = 0; i < numbers.length; i++) {
+   2,3 console.log(numbers[i]); // one, two, three, four
+    }
+
+    // The 'simple' for loop
+    

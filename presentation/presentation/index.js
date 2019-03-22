@@ -55,6 +55,8 @@ import { NeverUseVar } from './variables/never-use-var';
 import { DontBreakTheWeb } from './variables/dont-break-the-web';
 import { Variables } from './variables/variables';
 import { Arrays } from './arrays/arrays';
+import { For } from './arrays/for';
+import { ForIn } from './arrays/for-in';
 
 export default class Presentation extends React.Component {
   render() {
@@ -82,6 +84,8 @@ export default class Presentation extends React.Component {
 
         {/* Arrays */}
         <Arrays />
+        <For />
+        <ForIn />
 
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>

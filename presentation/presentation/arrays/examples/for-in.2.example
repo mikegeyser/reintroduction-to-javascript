@@ -1,0 +1,12 @@
+
+    const numbers = {
+        one: "one", 
+        two: "two", 
+        three: "three", 
+        four: "four"
+    };
+
+
+    for(let i in numbers) {
+        console.log(i); // ?
+    }

@@ -41,6 +41,9 @@
 
 - Arrays and Looping
     - for / for in / for of / foreach() / map()
+    - for
+        - variable initialisation is a 'special' case
+        - ++ isn't at the end, runs at the start except for the first one
 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
