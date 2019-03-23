@@ -10,7 +10,7 @@ export class Title extends React.Component {
           A
         </Heading>
         <Heading size={2} lineHeight={1} textColor="secondary">
-          <span className="tertiary">(Re) </span>Introduction
+          <span className="tertiary hand-written">(Re) </span>Introduction
         </Heading>
         <Heading size={4} lineHeight={1} textColor="secondary">
           to
@@ -19,8 +19,8 @@ export class Title extends React.Component {
           JavaScript
         </Heading>
         <div className="subtitle">
-          <div className="tertiary">@mikegeyser</div>
-          <div className="tertiary">DevConf 2019</div>
+          <div className="tertiary hand-written">@mikegeyser</div>
+          <div className="tertiary hand-written">DevConf 2019</div>
         </div>
       </Slide>
     );
