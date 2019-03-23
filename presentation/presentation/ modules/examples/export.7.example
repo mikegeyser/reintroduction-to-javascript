@@ -1,0 +1,7 @@
+
+    export * from './some-other-module.js';
+    
+    export * from './some-other-directory/index.js';
+    
+    export * from './some-other-directory'; // ☝️ equivalent
+

@@ -58,8 +58,8 @@ http://exploringjs.com/es2018-es2019/toc.html
 
 - Modules!!!
     - Import, Export, Export default
-    - dynamic import
     - module, nomodule
+    - dynamic import
 
 - Inheritence?? Nah
 

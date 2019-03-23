@@ -2,7 +2,7 @@ import React from 'react';
 import { Slide, CodePane } from 'spectacle';
 import { withCodeNavigation } from './with-code-navigation';
 
-export function withOnePageOfCode(load, numberOfSteps) {
+export function withOnePageOfCode(load, numberOfSteps, language = "javascript") {
   return class extends withCodeNavigation(React.Component) {
     constructor() {
       super();
@@ -18,7 +18,7 @@ export function withOnePageOfCode(load, numberOfSteps) {
 
       return (
         <Slide bgColor="primary" tabIndex="0" onKeyDown={(e) => alert('wat')}>
-          <CodePane lang="javascript" theme="external" source={source} />
+          <CodePane lang={language} theme="external" source={source} />
         </Slide>
       );
     }

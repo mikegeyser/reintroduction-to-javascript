@@ -1,0 +1,8 @@
+
+    export function Foo() { };
+
+    export const bar = "bar";
+
+    export class Baz { };
+    
+    const wat = "huh?"; // Internal

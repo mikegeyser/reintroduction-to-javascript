@@ -1,0 +1,7 @@
+
+    import { 
+        Foo,
+        bar, 
+        Baz as SomethingElse 
+    } from './foo.js';
+    

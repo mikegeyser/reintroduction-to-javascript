@@ -7,7 +7,7 @@ const notsureif = require('../../assets/notsureif.jpg');
 export class ThisIsAJoke extends React.Component {
   render() {
     return (
-      <Slide bgColor="primary">
+      <Slide bgColor="#000000">
         <div className="meme">
           <Image className="aliens" src={notsureif}/>
           <Text className="meme-text" caps>

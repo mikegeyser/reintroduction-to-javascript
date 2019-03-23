@@ -1,0 +1,7 @@
+
+    (function(module) {
+        module.Foo = function() {
+        }
+    })(module = module || {})
+
+    console.log(module.Foo); // Foo

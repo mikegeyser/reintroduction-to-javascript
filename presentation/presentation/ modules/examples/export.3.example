@@ -1,0 +1,7 @@
+
+    export function Foo() { };
+
+    export const bar = "bar";
+
+    export class Baz { };
+    

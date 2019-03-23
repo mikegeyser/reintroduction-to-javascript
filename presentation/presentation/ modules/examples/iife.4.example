@@ -1,0 +1,11 @@
+
+    let module = (function(module) {
+        let Foo = function() {
+        };
+
+        return {
+            Foo: Foo
+        };
+    })()
+
+    console.log(module.Foo); // Foo

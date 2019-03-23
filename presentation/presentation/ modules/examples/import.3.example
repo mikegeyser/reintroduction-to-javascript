@@ -1,0 +1,6 @@
+
+    import * as module from './foo.js';
+    
+    console.log(module.Foo);
+    console.log(module.bar);
+    

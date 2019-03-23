@@ -1,0 +1,14 @@
+
+    function Foo() { };
+
+    const bar = "bar";
+
+    class Baz { };
+    
+    const wat = "huh?"; // Internal
+
+    export {
+        Foo,
+        bar,
+        Baz as SomethingElse
+    };

@@ -68,6 +68,16 @@ import { ArrowFunctions } from './this/arrow-functions';
 import { Class } from './this/class';
 import { LearnToLoveArrows } from './this/learn-to-love-arrows';
 import { ThisIsAJoke } from './this/this-is-a-joke';
+import { Modules } from './ modules/modules';
+import { IIFE } from './ modules/iife';
+import { Export } from './ modules/export';
+import { Import } from './ modules/import';
+import { Script } from './ modules/script';
+import { DynamicImport } from './ modules/dynamic-import';
+import { HaveToUseModules } from './ modules/have-to-use-modules';
+import { DynamicImportsAreLit } from './ modules/dynamic-imports-are-lit';
+import { Inheritence } from './inheritence/inheritence';
+import { Strawman } from './inheritence/strawman';
 
 export default class Presentation extends React.Component {
   render() {
@@ -111,6 +121,21 @@ export default class Presentation extends React.Component {
         {/* <Class /> */}
         <LearnToLoveArrows />
         <ThisIsAJoke />
+
+        {/* Modules */}
+        <Modules />
+        <IIFE />
+        <Export />
+        <Import />
+        <Script />
+        <DynamicImport />
+        <HaveToUseModules />
+        <DynamicImportsAreLit />
+
+        {/* Inheritence */}
+        <Inheritence />
+        <Strawman />
+        
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Typography

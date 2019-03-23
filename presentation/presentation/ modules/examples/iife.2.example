@@ -1,0 +1,7 @@
+
+    (function() {
+        let Foo = function() {
+        }
+    })()
+
+    console.log(Foo); // undefined

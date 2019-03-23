@@ -1,0 +1,5 @@
+
+    import('./foo.js').then(module => {
+        console.log(module.Foo); // Foo
+    });
+    

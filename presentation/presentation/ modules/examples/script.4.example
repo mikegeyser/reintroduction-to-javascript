@@ -1,0 +1,8 @@
+
+    <script type="module">
+        import { Foo } from './foo.js';
+
+        console.log(Foo); // Foo
+    </script>
+
+    <script nomodule src="./foo.old.js"></script>
