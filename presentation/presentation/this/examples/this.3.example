@@ -1,0 +1,13 @@
+
+    console.log(this); // Window
+
+    function foo() {
+        console.log(this); // bar
+    }
+
+    let bar = { };
+
+    foo = foo.bind(bar, [ ]);
+
+    foo();
+    

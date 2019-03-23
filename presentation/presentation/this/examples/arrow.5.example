@@ -1,0 +1,8 @@
+
+    let foo = {
+        bar: function() {
+          console.log(this); // foo
+        }
+    };
+    
+    foo.bar();

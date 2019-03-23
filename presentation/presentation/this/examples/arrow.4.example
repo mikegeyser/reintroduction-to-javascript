@@ -1,0 +1,8 @@
+
+    let foo = () => console.log(this); // Still Window
+
+    let bar = { };
+
+    foo = foo.bind(this, []);
+    
+    foo();

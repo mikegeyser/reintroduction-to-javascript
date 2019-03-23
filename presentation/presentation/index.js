@@ -63,6 +63,11 @@ import { Functional } from './arrays/functional';
 import { OrderOfIteration } from './arrays/order-of-iteration';
 import { This } from './this/this';
 import { TheScream } from './this/the-scream';
+import { TheChallengeOfThis } from './this/the-challenge-of-this';
+import { ArrowFunctions } from './this/arrow-functions';
+import { Class } from './this/class';
+import { LearnToLoveArrows } from './this/learn-to-love-arrows';
+import { ThisIsAJoke } from './this/this-is-a-joke';
 
 export default class Presentation extends React.Component {
   render() {
@@ -101,7 +106,11 @@ export default class Presentation extends React.Component {
         {/* This */}
         <This />
         <TheScream />
-        
+        <TheChallengeOfThis />
+        <ArrowFunctions />
+        {/* <Class /> */}
+        <LearnToLoveArrows />
+        <ThisIsAJoke />
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Typography

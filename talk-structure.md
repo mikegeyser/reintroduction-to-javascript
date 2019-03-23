@@ -21,6 +21,8 @@
         - Type coercion and equality blah blah
         - Operator precedence problems
 
+ NB: Need to introduce == and === and array and object at this point in time!
+
     - OO was all the hype
         - Classes
         - Inheritence

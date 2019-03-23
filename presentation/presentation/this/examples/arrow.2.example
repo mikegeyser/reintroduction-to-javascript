@@ -1,0 +1,12 @@
+
+    function Foo() {
+        console.log(this); // Foo
+
+        this.bar = () => { 
+            console.log(this); // Foo
+        }
+    }
+
+    let foo = new Foo();
+    foo.bar();
+    

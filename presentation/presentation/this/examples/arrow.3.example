@@ -1,0 +1,13 @@
+
+    function Foo() {
+        console.log(this); // Foo
+
+        let bar = () => console.log(this); // Foo
+
+        document.addEventListener('onclick', bar);
+
+        setTimeout(() => console.log(this), 1); // Foo
+    }
+
+    let foo = new Foo();
+    

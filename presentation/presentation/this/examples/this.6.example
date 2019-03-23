@@ -1,0 +1,11 @@
+
+    function Foo() {
+        console.log(this); // Foo
+
+        setTimeout(function() {
+            console.log(this); // Window
+        }, 1);
+    }
+
+    let foo = new Foo();
+    

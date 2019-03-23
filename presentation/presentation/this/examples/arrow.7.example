@@ -1,0 +1,13 @@
+    
+    const numbers = [1, 2, 3, 4];
+
+    const exponents = numbers.map(function(element){
+        return 2 ** element;
+    });
+
+    const sumOfExponents = exponents.reduce(function(sum, element){
+        return sum += element;
+    }, 0);
+
+    console.log(sumOfExponents);
+    

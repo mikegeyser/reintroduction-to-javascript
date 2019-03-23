@@ -1,0 +1,6 @@
+    
+    const sumOfExponents = [1, 2, 3, 4]
+      .map(x => 2 ** x)
+      .reduce((sum, x) => sum += x);
+
+    console.log(sumOfExponents);

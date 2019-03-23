@@ -3,7 +3,6 @@ import { Slide, CodePane } from 'spectacle';
 import { withCodeNavigation } from './with-code-navigation';
 
 export function withOnePageOfCode(load, numberOfSteps) {
-  // ...and returns another component...
   return class extends withCodeNavigation(React.Component) {
     constructor() {
       super();

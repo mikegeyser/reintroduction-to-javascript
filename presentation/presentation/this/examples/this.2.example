@@ -1,0 +1,10 @@
+
+    console.log(this); // Window
+
+    function foo() {
+        console.log(this); // bar
+    }
+
+    let bar = { };
+
+    foo.apply(bar, [ ]);

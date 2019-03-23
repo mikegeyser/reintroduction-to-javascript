@@ -1,0 +1,7 @@
+  
+  function Foo {  }
+  
+  Foo.prototype.bar = function() {
+      console.log(this); // Foo
+  }
+      

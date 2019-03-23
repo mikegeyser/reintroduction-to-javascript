@@ -1,0 +1,8 @@
+
+    console.log(this); // Window
+
+    let foo = () => {
+        console.log(this); // Window
+    };
+
+    foo();

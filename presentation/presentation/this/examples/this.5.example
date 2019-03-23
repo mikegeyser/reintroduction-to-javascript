@@ -1,0 +1,17 @@
+
+    function Foo() {
+        console.log(this); // Foo
+
+        this.bar = function() {
+            console.log(this); // Inherited Foo
+        } 
+    }
+    
+    Foo.prototype.baz = function() {
+            console.log(this); // Foo
+    }
+
+    let foo = new Foo();
+    foo.bar();
+    foo.baz();
+    

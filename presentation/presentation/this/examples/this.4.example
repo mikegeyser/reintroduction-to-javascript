@@ -1,0 +1,9 @@
+
+    console.log(this); // Window
+
+    function foo() {
+        console.log(this); // HTML element
+    }
+
+    htmlElement.addEventListener('onclick', foo);
+    
