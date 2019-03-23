@@ -82,7 +82,13 @@ import { Strawman } from './inheritence/strawman';
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={['slide', 'slide']} transitionDuration={500} theme={theme}>
+      <Deck
+        transition={['slide', 'slide']}
+        transitionDuration={500}
+        theme={theme}
+        contentWidth="80vw"
+        contentHeight="80vh"
+      >
         {/* Intro */}
         <Title />
         <Slide bgColor="secondary">
@@ -112,7 +118,7 @@ export default class Presentation extends React.Component {
         <Functions />
         <Functional />
         <OrderOfIteration />
-        
+
         {/* This */}
         <This />
         <TheScream />
@@ -135,9 +141,9 @@ export default class Presentation extends React.Component {
         {/* Inheritence */}
         <Inheritence />
         <Strawman />
-        
+
         <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
+          <Heading size={6} textColor="primary">
             Typography
           </Heading>
           <Heading size={1} textColor="secondary">
@@ -155,7 +161,7 @@ export default class Presentation extends React.Component {
           <Heading size={5} textColor="secondary">
             Heading 5
           </Heading>
-          <Text size={6} textColor="secondary">
+          <Text size={1} textColor="secondary">
             Standard text
           </Text>
         </Slide>

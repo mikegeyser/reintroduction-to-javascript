@@ -25,7 +25,7 @@ export class LearnToLoveArrows extends React.Component {
         <Heading size={3} textColor="primary" caps className="hand-written">
           &nbsp; {this.state.rule.join(' ')}
         </Heading>
-        <Heading size={3} textColor="primary" caps>
+        <Heading size={1} textColor="primary">
           Arrow Functions
         </Heading>
         <Heading size={1} textColor="primary" caps className="hand-written">

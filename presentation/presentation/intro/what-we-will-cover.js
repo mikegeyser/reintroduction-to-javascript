@@ -6,7 +6,7 @@ export class WhatWeWillCover extends React.Component {
   render() {
     return (
       <Slide bgColor="tertiary">
-        <Text textColor="primary">Variables + scoping </Text>
+        <Text size={1} textColor="primary">Variables + scoping </Text>
         <Text textColor="primary">Arrays + looping</Text>
         <Text textColor="primary">Context (this)</Text>
         <Text textColor="primary">Modules!!</Text>

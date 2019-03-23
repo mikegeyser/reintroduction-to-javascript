@@ -18,13 +18,13 @@ export class NeverUseVar extends React.Component {
   render() {
     return (
       <Slide bgColor="tertiary">
-        <Heading size={3} textColor="primary" caps>
+        <Heading size={1} textColor="primary">
           You almost never
         </Heading>
-        <Heading size={6} textColor="primary" caps className="hand-written">
+        <Heading size={4} textColor="primary" caps className="hand-written">
           ({this.state.ever.join(', ')})
         </Heading>
-        <Heading size={3} textColor="primary" caps>
+        <Heading size={1} textColor="primary">
           want to use var
         </Heading>
 

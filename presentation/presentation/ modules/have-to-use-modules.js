@@ -22,13 +22,14 @@ export class HaveToUseModules extends React.Component {
   render() {
     return (
       <Slide bgColor="secondary">
-        <Heading size={4} textColor="primary" caps className="hand-written">
+        <Heading size={2} textColor="primary" caps className="hand-written">
           Bold statement:
         </Heading>
-        <Heading size={3} textColor="primary" caps>
+        <Heading size={1} textColor="primary">
           {this.state.rule.join(' ')}
         </Heading>
-        <Heading size={3} textColor="primary" caps className="hand-written">
+        <br />
+        <Heading size={2} textColor="primary" caps className="hand-written">
           {this.state.basically && '(almost)'}&nbsp;
         </Heading>
         }

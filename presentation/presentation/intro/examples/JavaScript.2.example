@@ -1,5 +1,6 @@
-function Dog(){
-  this.makeSound = function(){}   
-}
 
-Dog.getType = function(){}
+  function Dog(){
+    this.makeSound = function(){}   
+  }
+  
+  Dog.getType = function(){}

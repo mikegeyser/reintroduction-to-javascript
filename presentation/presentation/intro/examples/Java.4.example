@@ -1,13 +1,14 @@
-package Zoo;
 
-class Dog extends Animal {
+  package Zoo;
+  
+  class Dog extends Animal {
     constructor() {
-        super();
+      super();
     }
-
+  
     void makeSound(){
         super.makeSound();
     }
-
+  
     static void getType(){}
-}
+  }

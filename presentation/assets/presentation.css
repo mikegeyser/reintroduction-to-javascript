@@ -28,6 +28,11 @@
 .side-by-side-code {
     display: flex;
     justify-content: space-evenly;
+    min-width: 80vw;
+}
+
+.side-by-side-code.tall {
+    min-height: 80vh;
 }
 
 .side-by-side-code  div {
@@ -41,10 +46,13 @@
     height: 100%;
 }
 
-
 .prism-code {
-    font-size: 2.1em !important;
-    min-height: 50vh;
+    font-size: 2.7em !important;
+    min-height: 65vh;
+}
+
+.prism-code  span.comment {
+    color: var(--quaternary);
 }
 
 div.meme img.aliens {

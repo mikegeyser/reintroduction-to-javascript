@@ -1,11 +1,11 @@
-class Dog extends Animal {
+
+  class Dog extends Animal {
     constructor() {
-        super();
+      super();
     }
-
     void makeSound(){
-        super.makeSound();
+      super.makeSound();
     }
-
+    
     static void getType(){}
-}
+  }

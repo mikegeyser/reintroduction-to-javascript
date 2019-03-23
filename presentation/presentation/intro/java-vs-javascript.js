@@ -53,8 +53,8 @@ export class JavaVsJavaScript extends React.Component {
 
   render() {
     return (
-      <Slide bgColor="primary" tabIndex="0" onKeyDown={(e) => alert('wat')}>
-        <div className="side-by-side-code">
+      <Slide bgColor="primary">
+        <div className="side-by-side-code tall">
           <CodePane lang="java" theme="external" source={this.state.java} />
           <CodePane lang="javascript" theme="external" source={this.state.javascript} />
         </div>
