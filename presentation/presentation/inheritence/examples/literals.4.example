@@ -1,0 +1,15 @@
+
+    let foo = {
+        bar: function(){ 
+          console.log(this.baz);
+        },
+        baz: 'wat?'
+    };
+    
+    let shallowCopy = { 
+        ...foo, // ✨ magic ✨
+        baz: 'cool!'
+    };
+
+    shallowCopy.bar(); 
+    

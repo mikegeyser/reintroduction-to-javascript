@@ -1,0 +1,7 @@
+
+    let foo = {
+        bar: function(){ 
+            console.log(this.baz); // wat?
+        },
+        baz: 'wat?'
+    };

@@ -84,6 +84,10 @@ import { ArrowFunctionsBrowserSupport } from './this/arrow-functions-browser-sup
 import { ModulesBrowserSupport } from './ modules/modules-browser-support';
 import { ModulesScriptTagBrowserSupport } from './ modules/modules-script-tag-browser-support';
 import { DynamicImportBrowserSupport } from './ modules/dynamic-import-browser-support.1';
+import { JavaVsJavaScriptTakeTwo } from './inheritence/java-vs-javascript-take-two';
+import { ThisInClass } from './inheritence/this-in-class';
+import { ClassBrowserSupport } from './inheritence/class-browser-support';
+import { ObjectLiterals } from './inheritence/object-literals';
 
 export default class Presentation extends React.Component {
   render() {
@@ -152,6 +156,11 @@ export default class Presentation extends React.Component {
         {/* Inheritence */}
         <Inheritence />
         <Strawman />
+        <JavaVsJavaScriptTakeTwo />
+        <ThisInClass />
+        <ObjectLiterals />
+        <ClassBrowserSupport />
+        <ThisIsAJoke />
 
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary">

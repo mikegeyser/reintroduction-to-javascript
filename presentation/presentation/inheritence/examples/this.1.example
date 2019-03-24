@@ -1,0 +1,14 @@
+  
+  class Foo {
+    constructor() {
+      console.log(this); // Foo
+    }
+
+    bar() {
+      console.log(this); // Foo
+    }
+  }
+  
+  let foo = new Foo();
+  foo.bar();
+  

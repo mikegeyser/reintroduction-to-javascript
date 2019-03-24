@@ -1,0 +1,9 @@
+
+  class Dog {
+    constructor() { }
+
+    makeSound() { }   
+
+    static getType() { }
+  }
+  

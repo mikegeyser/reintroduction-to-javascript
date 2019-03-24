@@ -1,0 +1,15 @@
+  
+  class Foo {
+    constructor() {
+      this.bar = this.bar.bind(this, []);
+      htmlElement.addEventListener('click', this.bar);
+    }
+
+    bar() {
+      console.log(this); // Foo
+    }
+  }
+  
+  let foo = new Foo();
+  foo.bar();
+  

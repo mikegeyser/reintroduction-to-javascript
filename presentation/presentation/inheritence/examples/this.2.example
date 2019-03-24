@@ -1,0 +1,14 @@
+  
+  class Foo {
+    constructor() {
+      htmlElement.addEventListener('click', this.bar);
+    }
+
+    bar() {
+      console.log(this); // HTML Element
+    }
+  }
+  
+  let foo = new Foo();
+  foo.bar();
+  

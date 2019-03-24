@@ -67,6 +67,7 @@ http://exploringjs.com/es2018-es2019/toc.html
 
 - Notable apis?
     - Fetch
+    - Maybe I should drop this?
 
 - Transpilation (TypeScript or Babel)
 

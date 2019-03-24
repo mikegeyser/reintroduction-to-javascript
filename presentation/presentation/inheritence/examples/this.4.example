@@ -1,0 +1,15 @@
+  
+  class Foo {
+    constructor() {
+      htmlElement.addEventListener('click', (e) => this.bar());
+          // How do you remove the listener? ☝️
+    }                    
+
+    bar() {
+      console.log(this); // Foo
+    }
+  }
+  
+  let foo = new Foo();
+  foo.bar();
+  

@@ -1,0 +1,15 @@
+  
+  class Foo {
+    constructor() {
+      this.listener = (e) => this.bar();
+      htmlElement.addEventListener('click', listener);
+    }                    
+
+    // 'dispose' or 'unmount' framework event
+    cleanup() {
+        htmlElement.removeEventListener('click', this.listener);
+    }
+
+    bar() {  }   
+  }
+  
