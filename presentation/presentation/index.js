@@ -78,6 +78,12 @@ import { HaveToUseModules } from './ modules/have-to-use-modules';
 import { DynamicImportsAreLit } from './ modules/dynamic-imports-are-lit';
 import { Inheritence } from './inheritence/inheritence';
 import { Strawman } from './inheritence/strawman';
+import { VariablesBrowserSupport } from './variables/variables-browser-support';
+import { ArraysBrowserSupport } from './arrays/arrays-browser-support';
+import { ArrowFunctionsBrowserSupport } from './this/arrow-functions-browser-support';
+import { ModulesBrowserSupport } from './ modules/modules-browser-support';
+import { ModulesScriptTagBrowserSupport } from './ modules/modules-script-tag-browser-support';
+import { DynamicImportBrowserSupport } from './ modules/dynamic-import-browser-support.1';
 
 export default class Presentation extends React.Component {
   render() {
@@ -106,6 +112,7 @@ export default class Presentation extends React.Component {
         <Functions />
         <Let />
         <Const />
+        <VariablesBrowserSupport />
         <NeverUseVar />
         <DontBreakTheWeb />
 
@@ -117,6 +124,7 @@ export default class Presentation extends React.Component {
         <ForOf />
         <Functions />
         <Functional />
+        <ArraysBrowserSupport />
         <OrderOfIteration />
 
         {/* This */}
@@ -124,7 +132,7 @@ export default class Presentation extends React.Component {
         <TheScream />
         <TheChallengeOfThis />
         <ArrowFunctions />
-        {/* <Class /> */}
+        <ArrowFunctionsBrowserSupport />
         <LearnToLoveArrows />
         <ThisIsAJoke />
 
@@ -135,6 +143,9 @@ export default class Presentation extends React.Component {
         <Import />
         <Script />
         <DynamicImport />
+        <ModulesBrowserSupport />
+        <ModulesScriptTagBrowserSupport />
+        <DynamicImportBrowserSupport />
         <HaveToUseModules />
         <DynamicImportsAreLit />
 

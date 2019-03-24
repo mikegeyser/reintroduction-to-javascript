@@ -87,3 +87,65 @@ div.meme p.meme-text {
     width: 6em;
     height: 6em;
 }
+
+.browsers .check path,
+.browsers .cross line {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+    stroke-width: 10px;
+    margin: 40px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    overflow: visible;
+  }
+
+.browsers .cross line {
+    stroke-width: 5px;
+}
+
+.browsers .check.animate path {
+    animation: draw-check 0.5s linear forwards;
+  }
+
+.browsers .cross.animate line {
+    animation: draw-cross 0.5s linear forwards;
+}
+  
+.browsers svg.check  {
+    overflow: visible;
+}
+  
+@keyframes draw-check {
+    from {
+      stroke-linecap: round;
+      stroke: #FFFFFF;
+    }
+    to {
+      stroke: #2ABA66;
+      stroke-linecap: round;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+@keyframes draw-cross {
+    from {
+      stroke-linecap: round;
+      stroke: #FFFFFF;
+    }
+    to {
+      stroke: red;
+      stroke-linecap: round;
+      stroke-dashoffset: 0;
+    }
+}
+
+.reference {
+    display: block;
+    position: absolute;
+    bottom: 5em;
+    right: 15vw;
+    width: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
