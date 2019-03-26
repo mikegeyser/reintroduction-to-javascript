@@ -1,5 +1,5 @@
 
-    let module = (function(module) {
+    let module = (function() {
         let Foo = function() {
         };
 

@@ -1,23 +1,23 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 /* eslint-disable */
 
-var path = require("path");
-var webpack = require("webpack");
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
-  mode: "production",
-  entry: ["@babel/polyfill", "./index"],
+  mode: 'production',
+  entry: ['@babel/polyfill', './index'],
 
   output: {
-    path: path.join(__dirname, "dist"),
-    filename: "bundle.js",
-    publicPath: "/dist/"
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: '/dist/'
   },
 
   plugins: [
     new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: JSON.stringify("production")
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
       }
     })
   ],
@@ -28,10 +28,10 @@ module.exports = {
         test: /\.md$/,
         use: [
           {
-            loader: "html-loader"
+            loader: 'html-loader'
           },
           {
-            loader: "markdown-loader",
+            loader: 'markdown-loader',
 
             options: {
               gfm: false
@@ -44,7 +44,7 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader"
+            loader: 'babel-loader'
           }
         ]
       },
@@ -52,10 +52,10 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: "style-loader"
+            loader: 'style-loader'
           },
           {
-            loader: "css-loader"
+            loader: 'css-loader'
           }
         ]
       },
@@ -63,7 +63,7 @@ module.exports = {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
 
             options: {
               limit: 8192
@@ -75,11 +75,23 @@ module.exports = {
         test: /\.svg$/,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
 
             options: {
               limit: 10000,
-              mimetype: "image/svg+xml"
+              mimetype: 'image/svg+xml'
+            }
+          }
+        ]
+      },
+      ,
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
             }
           }
         ]

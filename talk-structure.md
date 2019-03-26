@@ -9,13 +9,13 @@
     - NEtscape + Sun
     - Complement Java and should have a similar syntax
     - Ultimately led to a lot of confusion
-    - What we actually write is ECMA script
-        - Hardly rolls off the tongue
-        - TC39?
 
     - JavaScript characteristics
         - Functional and prototypal
         - Nothing like the language it shared a name with
+        - What we actually write is ECMA script
+        - Hardly rolls off the tongue
+        - TC39?
 
     - Basic WAT stuff
         - Type coercion and equality blah blah

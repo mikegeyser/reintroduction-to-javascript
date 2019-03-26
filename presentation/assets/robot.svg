@@ -1,0 +1,444 @@
+<svg xmlns="http://www.w3.org/2000/svg" className="robot" width="300" height="300" viewBox="0 0 300 300">
+    <defs>
+        <style>
+        .marker {
+        transform: translate(10px, 130px);
+        display:none;
+        }
+        /*transitions*/
+        svg, .body, .arm-right, .magnet, .spine, .shdw-1 {
+        transition: all .7s cubic-bezier(.94,0,1,1);
+        }
+        .arm-left, .arm-right {
+        transition: all 1.5s ease;
+        }
+
+        body {
+        font-family: Segoe UI, Helvetica, Arial, sans-serif;
+        padding: 75px;
+        font-size: 16px;
+        }
+        p {
+        display: block;
+        text-align: center;
+        margin: 50px 0;
+        }
+        svg {
+        display: block;
+        transition: all .3s ease;
+        overflow: visible;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        }
+
+        /*title*/
+        h3 {
+        transition: all .5s ease-out;
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 300;
+        color: #222;
+        opacity: 0;
+        }
+        .wrapper {
+        margin: 0 auto;
+        width: 300px;
+        }
+        .wrapper h3 {
+        animation: title .3s ease;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        }
+
+        /* robot */
+        .robot {
+        transition: all .7s ease-in;
+        }
+        svg .robot {
+        transform:translateX(10px);
+        }
+
+        /*body*/
+        .body {
+        transform-origin: 95px 100px;
+        transform: rotate(-58deg) translate(-57px, -39px );
+        }
+        .spine {
+        stroke: black;
+        stroke-width: 30;
+        stroke-dasharray: 2, 0;
+        }
+        svg .spine {
+        stroke-dasharray: 5, 3;
+        stroke-dashoffset: -10;
+        }
+        .arm-right {
+        transform-origin: 130px 180px;
+        transform: translate(0) rotate(95deg);
+        }
+        .arm-left {
+        transform-origin: 60px 80px;
+        transform: translate(32px, 10px) rotate(-150deg);
+        }
+        svg .body, svg .arm-right, svg .arm-left {
+        transform: translate(0);
+        }
+
+        /* eyebrow */
+        .brow-right {
+        transition: all 4s ease;
+        transform-origin: 20px 20px;
+        transform: translate(-10px);
+        }
+        svg .brow-right {
+        animation: brow 1s ease infinite alternate;
+        animation-delay: .7s;
+        }
+
+        /*shadows*/
+        .shdw-1 {
+        stroke: #eee;
+        stroke-dasharray: 130;
+        stroke-dashoffset: -20;
+        }
+        svg .shdw-1 {
+        stroke-dasharray: 220;
+        stroke-dashoffset: -40;
+        }
+
+        /* magnet */
+        .magnet .mag {
+        animation: magnabounce 1s alternate infinite ease-in-out;
+        }
+        .magnet {
+        transform: translateX(80px) translateY(0px);
+        }
+        svg .magnet {
+        transform: translateX(0) translateY(0px);
+        }
+        svg .mag {
+        animation: none;
+        }
+
+        .panel {
+        stroke: #FCB713;
+        stroke-width: 10;
+        stroke-dasharray: 4;
+        stroke-dashoffset: 1;
+        }
+        svg .panel {
+        animation: panel .8s alternate infinite ease-in-out;
+        animation-delay:.7s;
+        }
+
+        /* animations */
+        @keyframes intro {
+        to {
+            transform: translateY(50px);
+        }
+        }
+        /* @keyframes magnabounce {
+        to {
+            transform: translateY(10px);
+        }
+        } */
+        @keyframes magnastay {
+        to {
+            transform: translateY();
+        }
+        }
+        @keyframes panel {
+        0% {
+            strok.marker {
+        transform: translate(10px, 130px);
+        display: none;
+        }
+        /*transitions*/
+        svg,
+        .body,
+        .arm-right,
+        .magnet,
+        .spine,
+        .shdw-1 {
+        transition: all 0.7s cubic-bezier(0.94, 0, 1, 1);
+        }
+        .arm-left,
+        .arm-right {
+        transition: all 1.5s ease;
+        }
+
+        body {
+        font-family: Segoe UI, Helvetica, Arial, sans-serif;
+        padding: 75px;
+        font-size: 16px;
+        }
+        p {
+        display: block;
+        text-align: center;
+        margin: 50px 0;
+        }
+        svg {
+        display: block;
+        transition: all 0.3s ease;
+        overflow: visible;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        }
+
+        /*title*/
+        h3 {
+        transition: all 0.5s ease-out;
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 300;
+        color: #222;
+        opacity: 0;
+        }
+        .wrapper {
+        margin: 0 auto;
+        width: 300px;
+        }
+        .wrapper h3 {
+        animation: title 0.3s ease;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        }
+
+        /* robot */
+        .robot {
+        transition: all 0.7s ease-in;
+        }
+        svg .robot {
+        transform: translateX(10px);
+        }
+
+        /*body*/
+        .body {
+        transform-origin: 95px 100px;
+        transform: rotate(-58deg) translate(-57px, -39px);
+        }
+        .spine {
+        stroke: black;
+        stroke-width: 30;
+        stroke-dasharray: 2, 0;
+        }
+        svg .spine {
+        stroke-dasharray: 5, 3;
+        stroke-dashoffset: -10;
+        }
+        .arm-right {
+        transform-origin: 130px 180px;
+        transform: translate(0) rotate(95deg);
+        }
+        .arm-left {
+        transform-origin: 60px 80px;
+        transform: translate(32px, 10px) rotate(-150deg);
+        }
+        svg .body,
+        svg .arm-right,
+        svg .arm-left {
+        transform: translate(0);
+        }
+
+        /* eyebrow */
+        .brow-right {
+        transition: all 4s ease;
+        transform-origin: 20px 20px;
+        transform: translate(-10px);
+        }
+        svg .brow-right {
+        animation: brow 1s ease infinite alternate;
+        animation-delay: 0.7s;
+        }
+
+        /*shadows*/
+        .shdw-1 {
+        stroke: #eee;
+        stroke-dasharray: 130;
+        stroke-dashoffset: -20;
+        }
+        svg .shdw-1 {
+        stroke-dasharray: 220;
+        stroke-dashoffset: -40;
+        }
+
+        /* magnet */
+        .magnet .mag {
+        animation: magnabounce 1s alternate infinite ease-in-out;
+        }
+        .magnet {
+        transform: translateX(80px) translateY(0px);
+        }
+        svg .magnet {
+        transform: translateX(0) translateY(0px);
+        }
+        svg .mag {
+        animation: none;
+        }
+
+        .panel {
+        stroke: #fcb713;
+        stroke-width: 10;
+        stroke-dasharray: 4;
+        stroke-dashoffset: 1;
+        }
+        svg .panel {
+        animation: panel 0.8s alternate infinite ease-in-out;
+        animation-delay: 0.7s;
+        }
+
+        /* animations */
+        @keyframes intro {
+        to {
+            transform: translateY(50px);
+        }
+        }
+        /* @keyframes magnabounce {
+        to {
+            transform: translateY(10px);
+        }
+        } */
+        @keyframes magnastay {
+        to {
+            transform: translateY();
+        }
+        }
+        @keyframes panel {
+        0% {
+            stroke-dashoffset: 0%;
+        }
+        50% {
+            stroke-dashoffset: 20%;
+        }
+        100% {
+            stroke-dashoffset: 0%;
+        }
+        }
+        @keyframes stuck {
+        0% {
+        }
+        100% {
+            transform: translateX(50px);
+        }
+        }
+        @keyframes brow {
+        to {
+            transform: translate(50px);
+        }
+        }
+        @keyframes title {
+        to {
+            opacity: 1;
+        }
+        }
+        e-dashoffset: 0%;
+        }
+        50% {
+            stroke-dashoffset: 20%;
+        }
+        100% {
+            stroke-dashoffset: 0%;
+        }
+        }
+        @keyframes stuck {
+        0% {
+        }
+        100% {
+            transform: translateX(50px);
+        }
+        }
+        @keyframes brow {
+        to {
+            transform: translate(50px);
+        }
+        }
+        @keyframes title {
+        to {
+            opacity: 1;
+        }
+        }
+        </style>
+    </defs>
+
+	<g class="magnet">
+		<g class="mag">
+			<path fill="#FF453C" d="M223.4 180.1h-50.1V143h50.1c13.8 0 25-11.2 25-25s-11.2-25-25-25h-50.1V55.8h50.1c34.3 0 62.2 27.9 62.2 62.1 0 34.3-27.9 62.2-62.2 62.2z" />
+			<path fill="#D1D1D1" d="M148.9 143h30v37.2h-30zM148.9 55.8H179V93h-30.1z" />
+		</g>
+	</g>
+	<g class="robot">
+		<g class="spine">
+			<g class="Layer_3">
+				<path fill="none" stroke-miterlimit="10" d="M65.4 171.5c-2.9-11.8 3-24.1 14.1-29.3" />
+			</g>
+		</g>
+		<g class="legs">
+			<path fill="#0076D2" d="M34.2 172.9h57.6v13.3H34.2z" />
+			<path fill="none" d="M34.2 172.9h57.6v13.3H34.2z" />
+			<path fill="#585856" d="M34.2 166.6h57.6v6.3H34.2z" />
+			<path fill="#238FD8" d="M27 205.1c-3.6 0-6.3-2.7-6.3-6.3v-9.9c0-3.6 2.7-7.2 6.3-7.2h69.3c3.6 0 6.3 3.6 6.3 7.2v9.9c0 3.6-2.7 6.3-6.3 6.3H27z" />
+			<path fill="#0076D2" d="M35.1 205.1h10.8v57.6H35.1z" />
+			<path fill="none" d="M35.1 205.1h10.8v57.6H35.1z" />
+			<path fill="#585856" d="M35.1 205.1h10.8v10.8H35.1z" />
+			<path fill="none" d="M35.1 205.1h10.8v10.8H35.1z" />
+			<path fill="#0076D2" d="M81.9 205.1h9.9v57.6h-9.9z" />
+			<path fill="none" d="M81.9 205.1h9.9v57.6h-9.9z" />
+			<path fill="#585856" d="M81.9 205.1h9.9v10.8h-9.9z" />
+			<path fill="none" d="M81.9 205.1h9.9v10.8h-9.9z" />
+			<path fill="#0076D2" d="M56.7 271.6c0-6.3-5.4-10.8-11.7-10.8h-9c-6.3 0-11.7 4.5-11.7 10.8h32.4z" />
+			<path fill="#585856" d="M24.3 271.6h32.4v6.3H24.3z" />
+			<path fill="none" d="M24.3 271.6h32.4v6.3H24.3z" />
+			<path fill="#0076D2" d="M103.5 271.6c-.9-6.3-6.3-10.8-12.6-10.8h-8.1c-6.3 0-11.7 4.5-12.6 10.8h33.3z" />
+			<path fill="#585856" d="M70.2 271.6h33.3v6.3H70.2z" />
+			<path fill="none" d="M70.2 271.6h33.3v6.3H70.2z" />
+		</g>
+		<g class="body">
+			<g class="arm-left">
+				<path fill="#238FD8" d="M94.2 73.4L76.6 59.5 57.1 84.1 74.8 98c2.1 1.7 5.9 1.2 7.6-.9l12.8-16.2c1.6-2.1 1.2-5.9-1-7.5" />
+				<path fill="#0076D2" d="M90.782 70.6L82.3 63.912l20.55-26.076 8.483 6.686z" />
+				<path fill="none" d="M90.782 70.6L82.3 63.912l20.55-26.076 8.483 6.686z" />
+				<path fill="#585856" d="M90.634 70.563L82.15 63.88l7.242-9.192 8.484 6.685z" />
+				<path fill="none" d="M90.634 70.563L82.15 63.88l7.242-9.192 8.484 6.685z" />
+				<g>
+					<path fill="#0076D2" d="M121.883 47.893l5.27-9.426 21.91 12.25-5.273 9.428z" />
+					<path fill="none" d="M121.883 47.893l5.27-9.426 21.91 12.25-5.273 9.428z" />
+					<path fill="#585856" d="M121.9 47.938l5.272-9.426 10.21 5.71-5.27 9.427z" />
+					<path fill="none" d="M121.9 47.938l5.272-9.426 10.21 5.71-5.27 9.427z" />
+					<path fill="#238FD8" d="M124.8 29.9c3.1 1.8 3.7 6.2 2 9.3l-4.8 8.6c-1.8 3.1-5.4 4.2-8.6 2.4l-17.2-9.6c-3.1-1.8-4.2-5.4-2.4-8.6l4.8-8.6c1.8-3.1 5.9-5 9-3.2l17.2 9.7z" />
+					<path fill="#0076D2" d="M157.2 67.6c-2.4.7-4.4.6-6-.3-3.9-2.2-5.3-7.1-3.1-11 2.2-3.9 7.1-5.3 11-3.1 1.6.9 2.7 2.5 3.4 5l7.3-2.1c-1-3.7-4.1-7.4-7.2-9.2-7.8-4.4-17.2-2.4-21.6 5.4-4.4 7.9-1.2 16.9 6.6 21.2 3.1 1.8 7.9 2.4 11.6 1.3l-2-7.2z" />
+				</g>
+			</g>
+			<g class="arm-right">
+				<path fill="#238FD8" d="M143.8 185.7l-19.2 9.9-14.4-27.9 19.2-9.9c3.2-1.6 6-.1 7.3 2.3l9.5 18.4c1.1 2.3.7 5.5-2.4 7.2" />
+				<path fill="#0076D2" d="M154.937 217.202l-8.8 4.535-15.21-29.512 8.8-4.535z" />
+				<path fill="#585856" d="M145.03 198.096l-8.8 4.537-5.362-10.4 8.8-4.538z" />
+				<path fill="none" d="M154.935 225.207l-8.8 4.535-15.21-29.51 8.8-4.536z" />
+				<path fill="none" d="M145.03 206.09l-8.8 4.537-5.36-10.4 8.8-4.536z" />
+				<path fill="#0076D2" d="M176.65 183.235l7.005 6.997-17.738 17.76-7.005-6.996z" />
+				<path fill="none" d="M176.65 183.235l7.005 6.997-17.738 17.76-7.005-6.996z" />
+				<path fill="#585856" d="M167.136 192.7l7.005 6.996-8.268 8.28-7.005-6.998z" />
+				<path fill="none" d="M167.136 192.7l7.005 6.996-8.268 8.28-7.005-6.998z" />
+				<path fill="#0076D2" d="M186.8 171.8c-1.9.6-3.8 1.3-5.1 2.5-3.2 3.2-3.2 8.3-.6 10.8 3.2 3.2 8.3 3.2 11.4 0 1.3-1.3 1.9-3.2 2.5-5.1h7.6c0 3.8-1.9 8.3-4.4 10.8-6.3 6.4-16.5 6.4-22.9 0-5.7-5.7-5.7-15.9.6-22.2 2.5-2.5 7-4.5 10.8-4.5l.1 7.7z" />
+				<path fill="#238FD8" d="M165.9 216.9c2.5-2.5 2.5-6.4 0-8.9l-7-7c-2.5-2.5-6.4-2.5-8.9 0l-14 14c-2.5 2.5-2.5 6.4 0 8.9l7 7c2.5 2.5 6.4 2.5 8.9 0l14-14z" />
+			</g>
+			<path fill="#238FD8" d="M154.4 99.8c-10-16-31.5-21.7-47.5-11.7l36.7 58.7c16-9.9 20.8-31 10.8-47" />
+			<path fill="#585856" d="M66.06 121.063l30.51 48.857-5.344 3.337-30.51-48.856z" />
+			<path fill="#4CABE0" d="M98.443 71.167l56.202 89.995-46.482 29.028-56.202-89.995z" />
+			<path fill="#585856" d="M118.6 156.1c-4.6 2.9-11.5 1.9-14.9-3.4l-20.5-32.8c-2.9-4.6-1.1-12 3.4-14.9 5.3-3.3 12.8-1.6 15.6 3l20.5 32.8c3.4 5.3 1.3 12-4.1 15.3" />
+			<path class="eye-right" fill="#FCB713" d="M148.2 128.6c-1.5 1-5.2.1-6.2-1.4-1.4-2.3-.1-5.2 1.4-6.2 2.3-1.4 4.8-.9 6.2 1.4 1 1.6.9 4.8-1.4 6.2" />
+			<path class="eye-left" fill="#FCB713" d="M130.1 99.6c-1.5 1-4.8.9-6.2-1.4-1.4-2.3-.1-5.2 1.4-6.2 2.3-1.4 4.8-.9 6.2 1.4 1.5 2.3.9 4.8-1.4 6.2" />
+			<path class="brow-right" fill="none" stroke="#585856" stroke-width="4" stroke-miterlimit="10" d="M167.3 125l-2.3-12.9" stroke-linecap="round" />
+			<path class="brow-left" fill="none" stroke="#585856" stroke-width="4" stroke-miterlimit="10" d="M134.3 88.7l10.7 7.6" stroke-linecap="round" />
+			<path class="panel" fill="none" stroke-miterlimit="10" d="M91.167 112.833l22.166 35.333" />
+		</g>
+	</g>
+	<g class="marker">
+		<circle cx="0" cy="0" r="5" fill="lightgreen" />
+	</g>
+</svg>

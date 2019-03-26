@@ -149,3 +149,110 @@ div.meme p.meme-text {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+.me {
+    position: relative;
+}
+
+.me .photo {
+    border-bottom: 5px solid #585856;
+}
+
+.me .retort-stand,
+.me .robot,
+.me .test-tubes,
+.me .beaker,
+.me .gde
+ {
+    animation: slide-up 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.me .retort-stand {
+    position: absolute;
+    bottom: -5em;
+    left: 9em;
+    width: 8em;
+    height: 8em;
+}
+
+.me .robot {
+    position: absolute;
+    bottom: -7.5em;
+    right: 9em;
+    width: 8em;
+    height: 8em;
+    animation-delay: 350ms;
+}
+
+.me .test-tubes {
+    position: absolute;
+    bottom: -8.5em;
+    right: 14em;
+    width: 8em;
+    height: 8em;
+    animation-delay: 200ms;
+}
+
+.me .beaker {
+    position: absolute;
+    bottom: -7.5em;
+    left: 14em;
+    width: 4em;
+    height: 4em;
+    animation-delay: 300ms;
+}
+
+.me .gde {
+    position: absolute;
+    top: 1em;
+    right: 8em;
+    height: 8em;
+}
+
+.me .whisper {
+  position: absolute;
+  top: -2em;
+  left: 10em;
+  font-size: 2vw;
+  color: #ccc;
+  fill: transparent;
+  font-style: italic;
+  width: 8em;
+}
+
+.me .whisper i {
+    position: absolute;
+    top: 0.9em;
+    left: 0.7em;
+    font-size: 1.7em;
+}
+
+@keyframes slide-up {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-100px);
+      opacity: 1;
+    }
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    height: 100vh;
+  }
+
+  .netscape-sun {
+      display: flex;
+      padding-left: 9em;
+      justify-content: space-evenly;
+  }
+
+  .netscape-sun .heart {
+    text-align: center;
+    margin: 5em 0 0 5em;
+  }

@@ -20,7 +20,6 @@ import {
 import createTheme from 'spectacle/lib/themes/default';
 
 const images = {
-  formidagon: require('../assets/formidable-logo.svg'),
   goodWork: require('../assets/good-work.gif')
 };
 
@@ -88,6 +87,12 @@ import { JavaVsJavaScriptTakeTwo } from './inheritence/java-vs-javascript-take-t
 import { ThisInClass } from './inheritence/this-in-class';
 import { ClassBrowserSupport } from './inheritence/class-browser-support';
 import { ObjectLiterals } from './inheritence/object-literals';
+import { Intro } from './intro/intro';
+import { JoziJs } from './intro/jozijs';
+import { ItShows } from './intro/it-shows';
+import { PepeSilvia } from './intro/pepe-silvia';
+import { NetscapeAndSun } from './intro/netscape_sun';
+import { WhyThisTalk } from './intro/why-this-talk';
 
 export default class Presentation extends React.Component {
   render() {
@@ -101,14 +106,16 @@ export default class Presentation extends React.Component {
       >
         {/* Intro */}
         <Title />
-        <Slide bgColor="secondary">
-          <Text textColor="primary">// todo: awkward, but funny introduction.. </Text>
-          <Notes>Wat?</Notes>
-        </Slide>
+        <Intro />
+        <JoziJs />
+        <PepeSilvia />
+        <ItShows />
+        {/* <NetscapeAndSun /> */}
         <JavaVsJavaScript />
         <Functions />
-        <RulesOfEngagement />
+        <WhyThisTalk />
         <WhatWeWillCover />
+        <RulesOfEngagement />
 
         {/* Variables */}
         <Variables />
