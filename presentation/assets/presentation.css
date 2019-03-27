@@ -239,11 +239,15 @@ div.meme p.meme-text {
     }
   }
 
-  video {
+  video.big {
     position: absolute;
     top: 0;
     left: 15vw;
     height: 100vh;
+  }
+  
+  video.mid {
+    height: 16em;
   }
 
   .netscape-sun {

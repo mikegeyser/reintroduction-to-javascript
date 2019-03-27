@@ -8,7 +8,7 @@ export class PepeSilvia extends React.Component {
   render() {
     return (
       <Slide bgColor="#000000">
-        <video loop autoPlay>
+        <video loop autoPlay className="big">
           <source src={video1} type="video/mp4" />
         </video>
       </Slide>

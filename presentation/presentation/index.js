@@ -103,6 +103,8 @@ export default class Presentation extends React.Component {
         theme={theme}
         contentWidth="80vw"
         contentHeight="80vh"
+        showFullscreenControl={false}
+        controls={false}
       >
         {/* Intro */}
         <Title />

@@ -6,16 +6,16 @@ export class WhatWeWillCover extends React.Component {
   render() {
     return (
       <Slide bgColor="tertiary">
-        <Text size={1} textColor="primary">Variables + scoping </Text>
-        <Text textColor="primary">Arrays + looping</Text>
-        <Text textColor="primary">Context (this)</Text>
-        <Text textColor="primary">Modules!!</Text>
-        <Text textColor="primary">
+        <Heading size={4} textColor="primary">Variables + scoping </Heading>
+        <Heading size={4} textColor="primary">Arrays + looping</Heading>
+        <Heading size={4} textColor="primary">Context (this)</Heading>
+        <Heading size={4} textColor="primary">Modules!!</Heading>
+        <Heading size={4} textColor="primary">
           <s>Inheritence</s> Nah.
-        </Text>
-        <Text textColor="primary">Promises</Text>
-        <Text textColor="primary">Notable APIs</Text>
-        <Text textColor="primary">Transpilation</Text>
+        </Heading>
+        <Heading size={4} textColor="primary">Promises</Heading>
+        <Heading size={4} textColor="primary">Notable APIs</Heading>
+        <Heading size={4} textColor="primary">Transpilation</Heading>
       </Slide>
     );
   }

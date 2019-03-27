@@ -8,14 +8,24 @@ export class DontBreakTheWeb extends React.Component {
   };
 
   componentDidMount() {
-    let words = ["Don't", 'break', 'the', 'web!'];
-
-    let interval = setInterval(() => {
-      this.setState({ rule: [...this.state.rule, words.splice(0, 1)] });
-
-      if (words.length === 0) clearInterval(interval);
-    }, 400);
+    document.addEventListener('keydown', this.onKeyDown);
   }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.onKeyDown);
+  }
+
+  onKeyDown = (e) => {
+    if (e.key === 'ArrowDown') {
+      let words = ["Don't", 'break', 'the', 'web!'];
+
+      let interval = setInterval(() => {
+        this.setState({ rule: [...this.state.rule, words.splice(0, 1)] });
+
+        if (words.length === 0) clearInterval(interval);
+      }, 400);
+    }
+  };
 
   render() {
     return (

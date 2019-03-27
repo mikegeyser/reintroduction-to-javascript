@@ -14,13 +14,13 @@ export class WhySoMany extends React.Component {
   render() {
     return (
       <Slide bgColor="tertiary">
-        <Text textColor="primary">for</Text>
-        <Text textColor="primary">for...in</Text>
-        <Text textColor="primary">for...of</Text>
-        <Text textColor="primary">forEach()</Text>
-        <Text textColor="primary">map()</Text>
+        <Heading size={4} textColor="primary">for</Heading>
+        <Heading size={4} textColor="primary">for...in</Heading>
+        <Heading size={4} textColor="primary">for...of</Heading>
+        <Heading size={4} textColor="primary">forEach()</Heading>
+        <Heading size={4} textColor="primary">map()</Heading>
         <br />
-        <Heading size={4} textColor="primary" caps className="hand-written">
+        <Heading size={3} textColor="primary" caps className="hand-written">
           {this.state.why}
         </Heading>
       </Slide>
