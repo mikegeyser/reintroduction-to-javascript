@@ -100,6 +100,14 @@ import { PromisesBrowserSupport } from './async/promises-browser-support';
 import { AsyncAwaitBrowserSupport } from './async/async-await-browser-support';
 import { IsItWorthIt } from './async/is-it-worth-it';
 import { PromisesAreHard } from './async/promises-are-hard';
+import { Transpilation } from './transpilation/transpilation';
+import { Definition } from './transpilation/definition';
+import { JavaScriptSolution } from './transpilation/javascript-solution';
+import { TypeScriptBabel } from './transpilation/typescript-babel';
+import { MultipleTargets } from './transpilation/multiple-targets';
+import { CodeEverywhere } from './transpilation/code-everywhere';
+import { Conclusion } from './conclusion/conclusion';
+import { Questions } from './conclusion/questions';
 
 export default class Presentation extends React.Component {
   render() {
@@ -186,7 +194,17 @@ export default class Presentation extends React.Component {
         <AsyncAwaitBrowserSupport />
         <IsItWorthIt />
         <PromisesAreHard />
-        
+
+        {/* Transpilation */}
+        <Transpilation />
+        <Definition />
+        <JavaScriptSolution />
+        <TypeScriptBabel />
+        <MultipleTargets />
+        <CodeEverywhere />
+
+        <Conclusion />
+        <Questions />
       </Deck>
     );
   }
