@@ -13,6 +13,8 @@ export class Questions extends React.Component {
           <div className="tertiary hand-written">@mikegeyser</div>
           <br />
           <div className="tertiary hand-written">mike@bbd.co.za</div>
+          <br />
+          <div className="tertiary hand-written">github.com/mikegeyser</div>
         </div>
       </Slide>
     );
