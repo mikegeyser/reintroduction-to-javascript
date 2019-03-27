@@ -13,8 +13,7 @@ export class WhatWeWillCover extends React.Component {
         <Heading size={4} textColor="primary">
           <s>Inheritence</s> Nah.
         </Heading>
-        <Heading size={4} textColor="primary">Promises</Heading>
-        <Heading size={4} textColor="primary">Notable APIs</Heading>
+        <Heading size={4} textColor="primary">Async</Heading>
         <Heading size={4} textColor="primary">Transpilation</Heading>
       </Slide>
     );

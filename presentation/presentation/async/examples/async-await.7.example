@@ -1,0 +1,16 @@
+    
+    (async function doStuff() {
+      let fetchFoo = async () => {
+          try {
+              let response = await fetch('/foo.json');
+              let foo = await response.json();
+  
+              return foo;
+          } catch (error) {
+              console.log(error);
+          }
+      };
+  
+      let foo = await fetchFoo(); 
+    })() // And you thought I was done with IIFEs
+    

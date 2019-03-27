@@ -1,0 +1,8 @@
+
+    let fetchFoo = () => fetch('/foo.jpeg')
+      .then(result => console.log(result)) // HttpResult
+      .catch(error => console.log(error));
+
+    fetchFoo()
+      .then(foo=> console.log(foo)); // foo.jpeg
+    

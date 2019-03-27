@@ -1,0 +1,8 @@
+
+    let fetchFoo = () => fetch('/foo.json')
+      .then(result => result.json())
+      .then(data => console.log(data)) // Some data. Probably foo.
+      .catch(error => console.log(error));
+
+    fetchFoo()
+      .then(foo=> console.log(foo)); // foo!

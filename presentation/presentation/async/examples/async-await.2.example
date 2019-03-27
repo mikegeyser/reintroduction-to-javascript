@@ -1,0 +1,7 @@
+
+    let fetchFoo = async () => await fetch('/foo.jpeg');
+
+    let foo = await fetchFoo();
+    
+    console.log(foo); // foo
+    

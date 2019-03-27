@@ -1,0 +1,8 @@
+
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => reject('🚨'), 1000);
+    });
+    
+    promise.then(result => console.log(result));
+    
+    promise.catch(error => console.log(error)); // 🚨

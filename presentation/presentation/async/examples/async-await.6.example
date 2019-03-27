@@ -1,0 +1,14 @@
+    
+    let fetchFoo = async () => {
+        try {
+            let response = await fetch('/foo.json');
+            let foo = await response.json();
+  
+            return foo;
+        } catch (error) {
+            console.log(error);
+        }
+    };
+  
+    fetchFoo().then(() => console.log('😞')); 
+    

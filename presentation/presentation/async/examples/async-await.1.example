@@ -1,0 +1,5 @@
+
+    let fetchFoo = () => fetch('/foo.jpeg');
+
+    fetchFoo();
+    

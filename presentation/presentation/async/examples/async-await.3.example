@@ -1,0 +1,11 @@
+    
+    let fetchFoo = async () => {
+        let response = await fetch('/foo.json');
+        let foo = await response.json();
+
+        return foo;
+    };
+
+    let foo = await fetchFoo();
+    
+    console.log(foo); // foo

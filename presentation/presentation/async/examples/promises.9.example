@@ -1,0 +1,12 @@
+
+    let fetchFoo = () => fetch('/foo.json')
+      .then(result => {
+        if (result.statusCode === 200) {
+          return result.json();
+        }
+      })
+      .then(data => console.log(data))
+      .catch(error => console.log(error));
+
+    fetchFoo()
+      .then(foo=> console.log(foo)); // foo or undefined?
