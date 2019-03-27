@@ -98,6 +98,8 @@ import { Promises } from './async/promises';
 import { AsyncAwait } from './async/async-await';
 import { PromisesBrowserSupport } from './async/promises-browser-support';
 import { AsyncAwaitBrowserSupport } from './async/async-await-browser-support';
+import { IsItWorthIt } from './async/is-it-worth-it';
+import { PromisesAreHard } from './async/promises-are-hard';
 
 export default class Presentation extends React.Component {
   render() {
@@ -182,6 +184,8 @@ export default class Presentation extends React.Component {
         <AsyncAwait />
         <PromisesBrowserSupport />
         <AsyncAwaitBrowserSupport />
+        <IsItWorthIt />
+        <PromisesAreHard />
         
       </Deck>
     );
