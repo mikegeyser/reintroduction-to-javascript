@@ -6,3 +6,4 @@
     for(let i in numbers) {
         console.log(i); // 0, 1, 2, 3, foo 
     }                   //☝️ Properties of Array()   
+    

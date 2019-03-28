@@ -10,3 +10,4 @@
     }, 0);
 
     console.log(sumOfExponents); // 30
+    

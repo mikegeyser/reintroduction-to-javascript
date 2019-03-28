@@ -9,3 +9,4 @@
     for(let i of numbers) {
         console.log(i); // TypeError: numbers is not iterable
     }
+    
