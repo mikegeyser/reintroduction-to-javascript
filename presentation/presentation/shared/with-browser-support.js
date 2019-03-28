@@ -112,7 +112,9 @@ export function withBrowserSupport(title, percentage, browser_exclude = {}, refe
             </div>
           </div>
 
-          <Link className="reference" href={reference}>Reference</Link>
+          <Link className="reference" href={reference}>
+            {reference && 'Reference'}
+          </Link>
         </Slide>
       );
     }
