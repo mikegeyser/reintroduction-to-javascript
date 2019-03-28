@@ -11,3 +11,4 @@
     
     fetchFoo()
       .then(foo=> console.log(foo));
+      

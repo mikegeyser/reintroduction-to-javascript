@@ -3,6 +3,6 @@
 
     let bar = { };
 
-    foo = foo.bind(this, []);
+    foo = foo.bind(bar, []);
     
     foo();

@@ -10,3 +10,4 @@
 
     fetchFoo()
       .then(foo=> console.log(foo)); // foo or undefined?
+      
