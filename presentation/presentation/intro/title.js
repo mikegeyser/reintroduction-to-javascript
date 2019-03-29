@@ -22,6 +22,11 @@ export class Title extends React.Component {
           <div className="tertiary hand-written">@mikegeyser</div>
           <div className="tertiary hand-written">DevConf 2019</div>
         </div>
+
+        <div className="directions hand-written">
+          <div>⬅️ ➡️ to go forward / back</div>
+          <div>⬆️ ⬇️ to transition in a slide</div>
+        </div>
       </Slide>
     );
   }

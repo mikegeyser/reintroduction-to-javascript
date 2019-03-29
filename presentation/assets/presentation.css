@@ -25,6 +25,16 @@
     font-size: 1.3em;
 }
 
+.directions {
+  position: absolute;
+  bottom: 3em;
+  right: 15vw;
+  /* font-size: 1.3em; */
+
+  text-align: left;
+}
+
+
 .side-by-side-code {
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +57,7 @@
 }
 
 .prism-code {
-    font-size: 3em !important;
+    font-size: 2.8em !important;
     min-height: 65vh;
 }
 
@@ -260,3 +270,4 @@ div.meme p.meme-text {
     text-align: center;
     margin: 5em 0 0 5em;
   }
+
