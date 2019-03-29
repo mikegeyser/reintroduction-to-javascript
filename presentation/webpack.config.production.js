@@ -84,7 +84,6 @@ module.exports = {
           }
         ]
       },
-      ,
       {
         test: /\.(mov|mp4)$/,
         use: [
@@ -98,7 +97,6 @@ module.exports = {
       }
     ]
   },
-
   optimization: {
     minimize: true,
 

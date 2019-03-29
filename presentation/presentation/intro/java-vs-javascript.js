@@ -55,7 +55,7 @@ export class JavaVsJavaScript extends React.Component {
     return (
       <Slide bgColor="primary">
         <div className="side-by-side-code tall">
-          <CodePane lang="java" theme="external" source={this.state.java} />
+          <CodePane lang="javascript" theme="external" source={this.state.java} />
           <CodePane lang="javascript" theme="external" source={this.state.javascript} />
         </div>
       </Slide>

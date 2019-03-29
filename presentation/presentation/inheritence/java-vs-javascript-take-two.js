@@ -7,6 +7,6 @@ export class JavaVsJavaScriptTakeTwo extends withSideBySideCode(
   loadA,
   loadB,
   4,
-  'java',
+  'javascript',
   'javascript'
 ) {}
